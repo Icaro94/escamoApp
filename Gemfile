@@ -3,6 +3,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+# Flexible authentication solution for Rails with Warden. 
+gem 'devise'
+# A runtime developer console and IRB alternative with powerful introspection capabilities.
+gem 'pry-rails', :group => :development
+# Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff 
+gem 'rails-i18n', '~> 5.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
@@ -42,6 +48,9 @@ group :development, :test do
 end
 
 group :development do
+  # Better error page for Rack apps 
+  gem "better_errors"
+  gem "binding_of_caller"
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
