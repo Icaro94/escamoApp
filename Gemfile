@@ -3,6 +3,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+# Bootstrap 4 rubygem for Rails / Sprockets / Hanami / etc
+gem 'bootstrap', '~> 4.3.1'
+gem 'jquery-rails'
+# Rails gem of the Bootstrap based admin theme SB Admin 2
+gem 'bootstrap_sb_admin_base_v2'
 # Flexible authentication solution for Rails with Warden. 
 gem 'devise'
 # A runtime developer console and IRB alternative with powerful introspection capabilities.
