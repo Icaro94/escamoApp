@@ -15,6 +15,4 @@
 //= require turbolinks
 //= require jquery3
 //= require popper
-//= require bootstrap
-//= require bootstrap_sb_admin_base_v2
 //= require_tree .
